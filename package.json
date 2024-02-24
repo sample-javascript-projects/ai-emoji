@@ -1,0 +1,26 @@
+{
+  "name": "ai-emoji",
+  "version": "1.0.0",
+  "description": "An emoji suggestor integratable into text fields using OpenAI",
+  "main": "ai-emoji.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sample-javascript-projects/ai-emoji.git"
+  },
+  "keywords": [
+    "emoji",
+    "ai"
+  ],
+  "author": "Saksham Malhotra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sample-javascript-projects/ai-emoji/issues"
+  },
+  "homepage": "https://github.com/sample-javascript-projects/ai-emoji#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
