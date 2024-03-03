@@ -4,7 +4,8 @@
   "description": "An emoji suggestor integratable into text fields using OpenAI",
   "main": "ai-emoji.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "webpack ./ai-emoji.ts --mode development && http-server --port 3000",
+    "build": "webpack ./ai-emoji.ts --mode production"
   },
   "repository": {
     "type": "git",
