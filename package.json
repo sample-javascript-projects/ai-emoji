@@ -21,7 +21,10 @@
   },
   "homepage": "https://github.com/sample-javascript-projects/ai-emoji#readme",
   "devDependencies": {
-    "typescript": "^5.3.3"
+    "http-server": "^14.1.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "openai": "^4.28.0"
