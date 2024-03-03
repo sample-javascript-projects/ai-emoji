@@ -4,7 +4,8 @@
   "description": "An emoji suggestor integratable into text fields using OpenAI",
   "main": "ai-emoji.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "webpack ./ai-emoji.ts --mode development && http-server --port 3000",
+    "build": "webpack ./ai-emoji.ts --mode production"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,10 @@
   },
   "homepage": "https://github.com/sample-javascript-projects/ai-emoji#readme",
   "devDependencies": {
-    "typescript": "^5.3.3"
+    "http-server": "^14.1.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "openai": "^4.28.0"
