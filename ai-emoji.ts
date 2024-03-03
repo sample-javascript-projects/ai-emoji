@@ -14,3 +14,16 @@ async function getEmojis(elem: HTMLInputElement) {
   elem.classList.remove("emojis-loading");
   return choices[0]?.message?.content;
 }
+
+export function initialise({ apiKey }) {
+  if (
+    !(this instanceof HTMLInputElement && this.type === "text") &&
+    !(this instanceof HTMLTextAreaElement)
+  ) {
+    throw new Error("This plug-in works best with textboxes");
+  }
+
+  if (!apiKey) {
+    throw new Error("Providing OpenAI key is mandatory");
+  }
+}
